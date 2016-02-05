@@ -21,7 +21,7 @@ Step2 :">
 website: hexo , github
 建立过程Step1 : 安装1$ npm install hexo -g
 Step2 :">
-<meta property="og:updated_time" content="2016-02-05T10:51:11.000Z">
+<meta property="og:updated_time" content="2016-02-05T10:57:15.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建博客0xFloat">
 <meta name="twitter:description" content="简介Hexo是一个基于Node.js的静态博客框架，简单，快速，并且功能强大。
@@ -140,27 +140,27 @@ Step2 :">
 <h2 id="u5EFA_u7ACB_u8FC7_u7A0B"><a href="#u5EFA_u7ACB_u8FC7_u7A0B" class="headerlink" title="建立过程"></a>建立过程</h2><h3 id="Step1__3A__u5B89_u88C5"><a href="#Step1__3A__u5B89_u88C5" class="headerlink" title="Step1 : 安装"></a>Step1 : 安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo -g</span><br></pre></td></tr></table></figure>
 <h3 id="Step2__3A__u5EFA_u7ACB_u535A_u5BA2"><a href="#Step2__3A__u5EFA_u7ACB_u535A_u5BA2" class="headerlink" title="Step2 : 建立博客"></a>Step2 : 建立博客</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init blog      <span class="comment">#初始化blog</span></span><br><span class="line">$ hexo generate       <span class="comment">#自动根据当前目录下文件,生成静态网页</span></span><br><span class="line">$ hexo server         <span class="comment">#运行本地服务,</span></span><br></pre></td></tr></table></figure>
 <p>根据命令行提示，在浏览器中输入 <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> 可以预览效果。</p>
-<h3 id="Step3__3A__u6D4B_u8BD5_u6DFB_u52A0_u535A_u6587"><a href="#Step3__3A__u6D4B_u8BD5_u6DFB_u52A0_u535A_u6587" class="headerlink" title="Step3 : 测试添加博文"></a>Step3 : 测试添加博文</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"博文名称"</span></span><br></pre></td></tr></table></figure>
+<h3 id="Step3__3A__u6D4B_u8BD5_u6DFB_u52A0_u535A_u6587"><a href="#Step3__3A__u6D4B_u8BD5_u6DFB_u52A0_u535A_u6587" class="headerlink" title="Step3 : 测试添加博文"></a>Step3 : 测试添加博文</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new 博文名称</span><br></pre></td></tr></table></figure>
 <p>博文会自动生成在博客目录下source/_posts/博文名称.md</p>
 <h3 id="Step4__3A__u66F4_u6362_u4E3B_u9898"><a href="#Step4__3A__u66F4_u6362_u4E3B_u9898" class="headerlink" title="Step4 : 更换主题"></a>Step4 : 更换主题</h3><p>初始化hexo时也会自动引用默认主题, 更换主题时，需要先将主题工程导入到themes目录，然后配置hexo的_config.yml配置文件。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> git://github.com/ppoffice/hexo-theme-alex.git themes/alex <span class="comment">#alex是主题的名称</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone git://github.com/ppoffice/hexo-theme-alex.git themes/alex</span><br></pre></td></tr></table></figure>
 <p>在_config.yml，修改为相应主题：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: alex</span><br></pre></td></tr></table></figure>
 <p>根据需要可以再定制主题，例如构成，样式等。</p>
 <p>重新生成静态文件并查看本地效果：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g       <span class="comment">#hexo generate简写</span></span><br><span class="line">$ hexo s       <span class="comment">#hexo server简写</span></span><br></pre></td></tr></table></figure>
 <h3 id="Step5__3A__u90E8_u7F72_u5230Github"><a href="#Step5__3A__u90E8_u7F72_u5230Github" class="headerlink" title="Step5 : 部署到Github"></a>Step5 : 部署到Github</h3><p>在_config.yml，修改为相应的部署信息：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git    <span class="comment">#部署类型</span></span><br><span class="line">  repository: git@github.com:<span class="number">0</span>xfloat/<span class="number">0</span>xflat.github.io.git  <span class="comment">#部署的仓库git ssh</span></span><br><span class="line">  branch: master   <span class="comment">#部署分支,一般使用master主分支</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">deploy:&#10;  type: git&#10;  repository: git@github.com:0xfloat/0xflat.github.io.git&#10;  branch: master</span><br></pre></td></tr></table></figure>
 <p>安装hexo-deployer-git：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <p>部署：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
-<p>之后便可以使用 <a href="http://0xflat.github.io" target="_blank" rel="external">0xflat.github.io</a> 进行访问</p>
+<p>之后便可以使用 <a href="http://0xfloat.github.io" target="_blank" rel="external">0xfloat.github.io</a> 进行访问</p>
 <h3 id="Step6__3A__u57DF_u540D_u7ED1_u5B9A"><a href="#Step6__3A__u57DF_u540D_u7ED1_u5B9A" class="headerlink" title="Step6 : 域名绑定"></a>Step6 : 域名绑定</h3><p>在source目录下建立文件CNAME，内容为绑定的域名地址：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0xfloat.com</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0xfloat.com</span><br></pre></td></tr></table></figure>
 <p>重新生成静态文件并部署到Github：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g </span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
-<p>在相应的域名解析规则中添加CNAME解析，并指向Step5中的 <a href="http://0xflat.github.io" target="_blank" rel="external">0xflat.github.io</a> ，</p>
+<p>在相应的域名解析规则中添加CNAME解析，并指向Step5中的 <a href="http://0xfloat.github.io" target="_blank" rel="external">0xfloat.github.io</a> ，</p>
 <p>之后便可以使用 <a href="http://www.0xfloat.com" target="_blank" rel="external">www.0xfloat.com</a> 进行访问。</p>
 
       
