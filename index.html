@@ -143,7 +143,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
 <p>之后便可以使用 <a href="http://0xflat.github.io" target="_blank" rel="external">0xflat.github.io</a> 进行访问</p>
 <h3 id="Step6__3A__u57DF_u540D_u7ED1_u5B9A"><a href="#Step6__3A__u57DF_u540D_u7ED1_u5B9A" class="headerlink" title="Step6 : 域名绑定"></a>Step6 : 域名绑定</h3><p>在source目录下建立文件CNAME，内容为绑定的域名地址：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0</span>xfloat.com</span><br></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0xfloat.com</span><br></pre></td></tr></table></figure>
 <p>重新生成静态文件并部署到Github：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g </span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
 <p>在相应的域名解析规则中添加CNAME解析，并指向Step5中的 <a href="http://0xflat.github.io" target="_blank" rel="external">0xflat.github.io</a> ，</p>
